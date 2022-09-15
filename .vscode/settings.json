@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  // "workbench.colorTheme": "Monokai",
+  "python.defaultInterpreterPath": "./.venv/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
+  "python.sortImports.args": ["-sp isort.cfg"],
+  "[python]": {
+    "editor.codeActionsOnSave": ["source.organizeImports"]
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,22 @@
+# https://pre-commit.com/hooks.html
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+  - repo: local
+    hooks:
+      - id: check-version
+        name: Check version
+        entry: python misc/check_version.py
+        language: system
+        always_run: true
+        pass_filenames: false
+      - id: update-requirements
+        name: Update requirements.txt
+        entry: pip-compile --output-file requirements.txt requirements.in
+        language: system
+        always_run: true
+        pass_filenames: false

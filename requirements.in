@@ -1,0 +1,11 @@
+# production & development
+pyright
+flake8
+black
+isort
+pip-tools
+pre-commit
+twine
+
+# typing
+adafruit-circuitpython-typing
