@@ -61,6 +61,8 @@ jaraco-classes==3.2.2
     # via keyring
 keyring==23.9.1
     # via twine
+loguru==0.7.0
+    # via -r requirements.in
 mccabe==0.7.0
     # via flake8
 more-itertools==8.14.0
@@ -111,6 +113,7 @@ readme-renderer==37.1
     # via twine
 requests==2.28.1
     # via
+    #   -r requirements.in
     #   requests-toolbelt
     #   twine
 requests-toolbelt==0.9.1

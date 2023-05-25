@@ -1,4 +1,7 @@
 # production & development
+requests
+loguru
+
 pyright
 flake8
 black

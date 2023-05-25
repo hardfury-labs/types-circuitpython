@@ -1,5 +1,6 @@
 generate:
-	git submodule update --init
+	git submodule update --remote
+# git submodule update --init
 	cd circuitpython/ && git checkout $(version) && cd ..
 	git submodule
 	rm -rf bindings/
@@ -27,6 +28,7 @@ publish:
 
 showhand:
 	make generate
-	python misc/set_version.py --version $(version)
+	python misc/version.py set --version $(version)
 	make build-package
 	make publish
+	python misc/version.py reset

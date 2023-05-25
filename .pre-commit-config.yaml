@@ -10,13 +10,25 @@ repos:
     hooks:
       - id: check-version
         name: Check version
-        entry: python misc/check_version.py
+        entry: python misc/version.py check
         language: system
         always_run: true
         pass_filenames: false
       - id: update-requirements
         name: Update requirements.txt
         entry: pip-compile --output-file requirements.txt requirements.in
+        language: system
+        always_run: true
+        pass_filenames: false
+      - id: update-submodule
+        name: Update submodule
+        entry: git submodule update --remote
+        language: system
+        always_run: true
+        pass_filenames: false
+      - id: git-add-circuitpython
+        name: Git add circuitpython
+        entry: git add circuitpython
         language: system
         always_run: true
         pass_filenames: false
