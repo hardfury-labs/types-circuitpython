@@ -1,8 +1,8 @@
 # types-circuitpython
 
-![Package Version](https://img.shields.io/pypi/v/types-circuitpython?label=types-circuitpython&style=flat-square)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/types-circuitpython?style=flat-square)
-![PyPI - Wheel](https://img.shields.io/pypi/wheel/types-circuitpython?style=flat-square)
+[![Package Version](https://img.shields.io/pypi/v/types-circuitpython?label=types-circuitpython&style=flat-square)](https://pypi.org/project/types-circuitpython/#history)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/types-circuitpython?style=flat-square)](https://pypi.org/project/types-circuitpython/)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/types-circuitpython?style=flat-square)](https://pypi.org/project/types-circuitpython/)
 
 Type Support (typings) for [CircuitPython](https://github.com/adafruit/circuitpython) built-in binding packages.
 
